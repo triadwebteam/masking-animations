@@ -1,0 +1,53 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.hero2 {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    & .outerFlex {
+        width: 100%;
+        text-align: center;
+    }
+
+    & .mask {
+        overflow:hidden;
+
+        & h1 {
+            font-size:100px;
+            font-family:"Montserrat", sans-serif;
+            letter-spacing: -0.05em;
+            font-weight:900;
+            transform:translateY(-100%);
+            animation:goDown 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+            animation-delay:0.5s;
+        }
+    }
+
+    & .mask-p {
+        overflow:hidden;
+
+        &  p {
+            font-size:16px;
+            font-family:"Montserrat", sans-serif;
+            letter-spacing: -0.05em;
+            font-weight:400;
+            transform:translateY(-100%);
+            animation:goDown 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+            animation-delay:0.7s;
+            color: #696969;
+        }
+    }
+}
+
+@keyframes goDown {
+    100% {
+        transform:translateY(0);
+    }
+}

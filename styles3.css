@@ -1,0 +1,45 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.hide {
+    transform:translateY(-100%);
+}
+
+.hero3 {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    & .outerFlex {
+        width: 100%;
+        text-align: center;
+    }
+
+    & .mask {
+        overflow:hidden;
+
+        & h1 {
+            font-size:100px;
+            font-family:"Montserrat", sans-serif;
+            letter-spacing: -0.05em;
+            font-weight:900;
+        }
+    }
+
+    & .mask {
+        overflow:hidden;
+
+        &  p {
+            font-size:16px;
+            font-family:"Montserrat", sans-serif;
+            letter-spacing: -0.05em;
+            font-weight:400;
+            color: #696969;
+        }
+    }
+}
